@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JLColorPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="L55hYy77SLqb6zeTMlWr_IMG_9035" translatesAutoresizingMaskIntoConstraints="NO" id="q3o-wA-sR5" customClass="colorPickerView" customModule="JLColorPicker" customModuleProvider="target">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYg-mu-bRz">
+                                <rect key="frame" x="16" y="551" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fYg-mu-bRz" secondAttribute="trailing" id="0FF-Ws-KK5"/>
+                            <constraint firstItem="fYg-mu-bRz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="531" id="HLw-b6-G5y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q3o-wA-sR5" secondAttribute="trailing" constant="-20" id="OOa-4B-R4Y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q3o-wA-sR5" secondAttribute="bottom" id="W24-fj-SPF"/>
+                            <constraint firstItem="q3o-wA-sR5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="X7g-GP-O2U"/>
+                            <constraint firstItem="fYg-mu-bRz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eV4-Hy-p8X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fYg-mu-bRz" secondAttribute="bottom" constant="95" id="nVv-4J-OHJ"/>
+                            <constraint firstItem="q3o-wA-sR5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="q7U-Nb-JTI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="colroLabel" destination="fYg-mu-bRz" id="6mI-xD-J9N"/>
+                        <outlet property="imageView" destination="q3o-wA-sR5" id="jVP-Lf-Dzz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="428.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="L55hYy77SLqb6zeTMlWr_IMG_9035" width="3456" height="2304"/>
+    </resources>
+</document>
